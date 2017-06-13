@@ -1,4 +1,4 @@
-import $ from "./global/jquery";
+mport $ from "./global/jquery";
 import L from "./global/leaflet";
 import Shiny from "./global/shiny";
 import HTMLWidgets from "./global/htmlwidgets";
