@@ -1853,6 +1853,9 @@ methods.addLegend = function (options) {
       div.innerHTML = legendHTML;
     }
     if (options.title) (0, _jquery2.default)(div).prepend("<div style=\"margin-bottom:3px\"><strong>" + options.title + "</strong></div>");
+    var draggable = new L.Draggable(div);
+    draggable.enable();
+    alert("yes");
     return div;
   };
 
