@@ -683,7 +683,7 @@ methods.clearControls = function() {
 methods.addLegend = function(options) {
   let legend = L.control({position: options.position});
   let gradSpan;
-
+  alert('legend');
   legend.onAdd = function (map) {
     let div = L.DomUtil.create("div", options.className),
       colors = options.colors,
@@ -793,7 +793,7 @@ methods.addLegend = function(options) {
                       options.title + "</strong></div>");
     var draggable = new L.Draggable(div);
     draggable.enable();
-    console.log(draggable);
+    alert(draggable);
     return div;
   };
 
