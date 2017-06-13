@@ -793,6 +793,7 @@ methods.addLegend = function(options) {
                       options.title + "</strong></div>");
     var draggable = new L.Draggable(div);
     draggable.enable();
+    console.log(draggable);
     return div;
   };
 
