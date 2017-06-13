@@ -1766,6 +1766,9 @@ methods.addLegend = function (options) {
         colors = options.colors,
         labels = options.labels,
         legendHTML = "";
+    
+    L.DomUtil.setPosition(div, "bottomright");
+    
     if (options.type === "numeric") {
       (function () {
         // # Formatting constants.
