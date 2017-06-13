@@ -791,6 +791,8 @@ methods.addLegend = function(options) {
     if (options.title)
       $(div).prepend("<div style=\"margin-bottom:3px\"><strong>" +
                       options.title + "</strong></div>");
+    var draggable = new L.Draggable(div);
+    draggable.enable();
     return div;
   };
 
